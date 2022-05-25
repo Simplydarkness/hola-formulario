@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+          <div class="head">
+            <h2>Hola Formulario</h2>
+        </div>
+        <form class="row g-2" onsubmit="return validar()">
+            
+            <div class="col-md2>
+              <label  class="form-label">user E-mail:</label>
+              <input class="form-control" id="email">
+              <div id="msj-email"></div>
+            </div>
+            
+            <div class="col">
+              <label for="pass" class="form-label">password:</label>
+              <input type="password" class="form-control" id="pass">
+              <div id="msj-pass"></div>
+            </div>
+            
+            <div class="col-md-3">
+                <label for="rp" class="form-label"> Repetir password: </label>
+                <input type="password" class="form-control" id="rp">
+                <div id="msj-rp"></div>
+              </div>
+
+            
+
+            <div class="col-md-3">
+              <label for="direccion" class="form-label">Codigo postal:</label>
+              <input type="text" class="form-control" id="codpost">
+              <div id="msj-cod"></div>
+            </div>
+            <div class="col-md-3">
+              <label for="direccion" class="form-label">Ciudad:</label>
+              <input type="text" class="form-control" id="ciudad">
+              <div id="msj-city"></div>
+            </div>
+            
+
+            <div class="col-md-3">
+              <label for="direccion" class="form-label">Region:</label>
+              <input type="text" class="form-control" id="region">
+              <div id="msj-region"></div>
+            </div>
+
+            <div class="col-md-3">
+              <label for="comu" class="form-label">Comuna:</label>
+              <select class="form-select" id="com">
+                <option selected disabled value="">-comuna-</option>
+                <option>mariquina</option>
+                <option>lanco</option>
+                <option>la union</option>
+                <option>futrono</option>
+              </select>
+              <div id="msj-com"></div>
+            </div>
+
+            
+
+            <div class="col-md-3">
+              <label for="cel" class="form-label">celular:</label>
+              <div class="input-group has-validation">
+              <input type="text" class="form-control" id="celular">
+              </div>
+              <div id="msj-cel"></div>
+            </div>
+            
+            <div class="col-md-3">
+              <label for="phone" class="form-label">telefono:</label>
+              <input type="text" class="form-control" id="phone">   
+              <div id="msj-telefono"></div>
+            </div>
+            
+            <div>Pasatiempos: </div>
+            <div class="col-2">
+            <div class="col-1">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gridCheck">
+                <label class="form-check-label" for="BOX">
+                  dibujar
+                </label>
+                <div class="invalid-feedback"></div>
+              </div>
+            
+            
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gridCheck">
+                <label class="form-check-label" for="BOX">
+                  Bailar
+                </label>
+                <div class="invalid-feedback"></div>
+              </div>
+            
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gridCheck">
+                <label class="form-check-label" for="BOX">
+                  danza contemporanea
+                </label> 
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+
+
+
+
+            <div class="col-1">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gridCheck">
+                <label class="form-check-label" for="BOX">
+                  remo
+                </label>
+                <div class="invalid-feedback"></div>
+              </div>
+            
+            
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gridCheck">
+                <label class="form-check-label" for="BOX">
+                  kayac
+                </label>
+                <div class="invalid-feedback"></div>
+              </div>
+            
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" name="gridCheck">
+                <label class="form-check-label" for="BOX">
+                  caminata
+                </label> 
+                <div class="invalid-feedback"></div>
+              </div>
+            </div>
+            <div id="msj-box"></div>
+
+            <div class="col-">
+              <button type="submit" class="button">enviar</button>
+            </div>
+          </form>
+        </div>
+          <script src="java.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+           integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    </body>
+</html>
